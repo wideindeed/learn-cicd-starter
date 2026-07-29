@@ -22,8 +22,8 @@ func TestGetAPIKey(t *testing.T) {
 			expectedError: false,
 		},
 		{
-			name: "Missing Header entirely",
-			headers: http.Header{},
+			name:          "Missing Header entirely",
+			headers:       http.Header{},
 			expectedKey:   "",
 			expectedError: true,
 		},
